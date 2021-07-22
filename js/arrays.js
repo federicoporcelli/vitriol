@@ -15,11 +15,16 @@ elementos.push (new productos ("Cofias", 75));
 elementos.push (new productos ("Mascara Protectora", 500));
 elementos.push (new productos ("Kit", 1000));
 
-for (const productos of elementos) {
-    console.log(productos.nombre)
-    console.log(productos.precio)
-    
+function ordenarPorPrecio () {
+
+elementos.sort ((a,b) => { 
+    return a.precio - b.precio;
+
+})
+
+elementos.forEach ((e) => {
+    console.log(`${e.nombre    } ${" $" + e.precio} `);
+
+});
+
 }
-
-
-

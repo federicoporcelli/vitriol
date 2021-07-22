@@ -23,8 +23,18 @@
     justify-content: center;
 }
 
+
+.boton {
+    padding-top: 50px;
+    margin-left: 20px;
+}
+
+.cuadrado {
+    background:darkblue;
+    color: white;
+}
 .productos {
-    padding-top: 70px;
+    padding-top: 10px;
     margin-left: 20px;
 }
 
