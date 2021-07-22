@@ -15,7 +15,7 @@ elementos.push (new productos ("Cofias", 75));
 elementos.push (new productos ("Mascara Protectora", 500));
 elementos.push (new productos ("Kit", 1000));
 
-function ordenarPorPrecio () {
+function ordenarPorMenorPrecio () {
 
 elementos.sort ((a,b) => { 
     return a.precio - b.precio;
@@ -28,3 +28,19 @@ elementos.forEach ((e) => {
 });
 
 }
+
+function ordenarPorMayorPrecio () {
+
+    elementos.sort ((a,b) => { 
+        return b.precio - a.precio;
+    
+    })
+    
+    elementos.forEach ((e) => {
+        console.log(`${e.nombre    } ${" $" + e.precio} `);
+    
+    });
+    
+    }
+    
+

@@ -20,3 +20,4 @@ producto3.mostrar();
 producto4.mostrar();
 producto5.mostrar();
 producto6.mostrar();
+

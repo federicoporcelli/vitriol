@@ -30,7 +30,7 @@
 }
 
 .cuadrado {
-    background:darkblue;
+    background: #085ED6;
     color: white;
 }
 .productos {
@@ -41,6 +41,12 @@
 .productos img {
     width: 50%;
     height: 50%;
+}
+
+
+.info {
+    padding-top: 50px;
+    text-align: center;
 }
 
 .redes {
