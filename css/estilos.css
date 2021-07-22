@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    
+}
+
+.titulo {
+    text-align: center;
+    margin: 30px;
+    
+}
+
+.titulo img {
+    width:100%;
+}
+
+
+.barraNav {
+    background-color: none ;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.productos {
+    padding-top: 70px;
+    margin-left: 20px;
+}
+
+.productos img {
+    width: 50%;
+    height: 50%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin: 50px;
+}
+
