@@ -22,7 +22,7 @@ function promoGalicia () {
 
 let promoGalicia = document.createElement(`p`)
 promoGalicia.innerHTML = `3 cuotas sin interes.<br>
-                            12 cuotas fijas (CFT 39%)`
+                            12 cuotas fijas (CFT 39%)</p>`
     
     
 document.body.appendChild(promoGalicia)
