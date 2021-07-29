@@ -12,7 +12,7 @@
 }
 
 .titulo img {
-    width:100%;
+    width:50%;
 }
 
 
@@ -23,6 +23,18 @@
     justify-content: center;
 }
 
+.banner {
+    background-color: #085ED6;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.banner a {
+    color: white;
+    text-decoration: none;
+}
 
 .boton {
     padding-top: 50px;
@@ -55,6 +67,34 @@
     margin: 50px;
 }
 
+.bancos {
+    text-align: start;
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+.bancos ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.bancos ul li {
+    padding-top: 50px;
+}
+
+.bancos ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    ;
+}
+
+.bancos img {
+    height: 50px;
+    width: 50px;
+    
+}
 .redes {
     display: flex;
     flex-direction: column;
