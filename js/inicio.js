@@ -1,8 +1,21 @@
 
-let nombre = prompt("Buen dia visitante. Como es su nombre?")
 
-function saludoInicial () {
-    alert("Hola " + nombre + ". Bienvenido a Vitriol. Espero que puedas encontrar lo que buscas. Por cualquier problema, en la seccion de CONTACTO tenes la info para comunicarte con nosotros!")
-   }
+let usuario = document.getElementById ("nombre")
+let correo = document.getElementById ("mail")
 
-saludoInicial ();
+document.getElementById ("enviar").onclick = saludar
+
+function saludar (event) {
+    event.preventDefault ();
+    localStorage.setItem('Nombre', usuario.value);
+    localStorage.setItem('Direccion de Mail', correo.value)
+    const datosIngresados = document.createElement("div");
+    datosIngresados.textContent = "Usted ingreso: Nombre: " + localStorage.getItem('Nombre') + ", y su direccion de mail es: " + localStorage.getItem('Direccion de Mail')
+    document.body.appendChild(datosIngresados)    
+}
+
+const datosIngresados = document.createElement("div");
+datosIngresados.textContent = "Usted ingreso: Nombre: " + localStorage.getItem('Nombre') + ", y su direccion de mail es: " + localStorage.getItem('Direccion de Mail')
+
+saludar()
+
