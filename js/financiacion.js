@@ -1,3 +1,4 @@
+$(document).ready(function() {
 
 
 $('#myselect').change(function() {
@@ -41,3 +42,5 @@ $('#myselect').change(function() {
       $('#modalFrances').modal("show");
     }
   });
+
+})

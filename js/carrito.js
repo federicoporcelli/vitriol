@@ -121,7 +121,7 @@ var productoFinal = document.getElementById ("prodFinal")
 var cantidadFinal = document.getElementById ("cantidadFinal")
 var precioFinal = document.getElementById ("precioFinal")
 
-document.getElementById ("comprar").onclick = compraConfirmada
+document.getElementById ("comprar").onclick = saveToStorage
 
 function compraConfirmada (event) {
     event.preventDefault ();
@@ -132,3 +132,18 @@ function compraConfirmada (event) {
     
 }
 
+let compras = []
+if(localStorage.getItem('comprasTotal')) {
+  compras = Json.parse(localStorage.getItem('comprasTotal'))
+}
+
+function saveToStorage (key, compraTotal) {
+  comprasTotal.push(compraTotal);
+  localStorage.setItem(key, JSON.stringify(compraTotal));
+}
+
+function getCompraFromStorage(key){
+  if(localStorage.getItem(key)){
+    return JSON.parse(localStorage.getItem(key));
+  }
+}
